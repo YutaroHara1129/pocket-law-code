@@ -1,0 +1,11 @@
+diff --git a/storage.py b/storage.py
+--- a/storage.py
++++ b/storage.py
+@@ -1,6 +1,2 @@
+ def expire(rows, owner, now):
+-    return [
+-        row
+-        for row in rows
+-        if row["owner"] != owner or row["expires"] > now
+-    ]
++    return [row for row in rows if row["expires"] > now]
