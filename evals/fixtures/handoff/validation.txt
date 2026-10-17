@@ -1,0 +1,4 @@
+Command: python3 -m unittest discover -s tests
+Revision: before the proposed.diff change
+Result: exit 0
+No test run for the proposed.diff revision is recorded.
